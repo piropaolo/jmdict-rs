@@ -1,11 +1,11 @@
-use std::fs;
-
 use crate::domain::{Entry, JMdict};
+use crate::download::download_jm_dict;
 
 pub mod domain;
+mod download;
 
 fn load_jm_dict() -> JMdict {
-    let data = fs::read_to_string("json/jmdict-eng-3.3.1.json").unwrap();
+    let data = download_jm_dict().unwrap();
 
     serde_json::from_str(&data).unwrap()
 }
