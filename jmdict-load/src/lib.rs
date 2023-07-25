@@ -35,7 +35,7 @@ fn get_latest_release_url() -> Result<String, Box<dyn std::error::Error>> {
         .assets
         .iter()
         .find(|a|
-            a.name.contains("jmdict-eng") && a.name.contains("common")
+            a.name.contains("jmdict-eng") && !a.name.contains("common")
         )
         .map(|a| a.browser_download_url.clone())
         .unwrap();

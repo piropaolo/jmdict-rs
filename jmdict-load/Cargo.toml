@@ -1,10 +1,5 @@
-[workspace]
-members = [
-    "jmdict-load"
-]
-
 [package]
-name = "jmdict-rs"
+name = "jmdict-load"
 version = "0.1.0"
 authors = ["Paweł Kamiński <kaminski_pawel@icloud.com"]
 edition = "2021"
@@ -14,6 +9,6 @@ edition = "2021"
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-
-[build-dependencies]
-jmdict-load = { path = "jmdict-load", version = "0.1.0" }
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+flate2 = "1.0.26"
+tar = "0.4.38"
