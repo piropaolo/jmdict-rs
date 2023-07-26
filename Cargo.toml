@@ -1,15 +1,20 @@
-[workspace]
-members = [
-    "jmdict-load"
-]
-
 [package]
 name = "jmdict-rs"
 version = "0.1.0"
 authors = ["Paweł Kamiński <kaminski_pawel@icloud.com"]
+license = "Apache-2.0"
+description = "Simple interface for interacting with JMdict Japanese dictionary"
+documentation = "https://docs.rs/jmdict-rs"
+repository = "https://github.com/piropaolo/jmdict-rs"
+readme = "README.md"
+keywords = ["japanese", "dictionary", "jmdict"]
+categories = ["database"]
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = [
+    "jmdict-load"
+]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }

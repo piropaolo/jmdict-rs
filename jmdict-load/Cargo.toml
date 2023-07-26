@@ -2,9 +2,14 @@
 name = "jmdict-load"
 version = "0.1.0"
 authors = ["Paweł Kamiński <kaminski_pawel@icloud.com"]
+license = "Apache-2.0"
+description = "jmdict-rs dependency responsible for retrieving dictionary data"
+documentation = "https://docs.rs/jmdict-load"
+repository = "https://github.com/piropaolo/jmdict-rs"
+readme = "README.md"
+keywords = ["japanese", "dictionary", "jmdict"]
+categories = ["database"]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
