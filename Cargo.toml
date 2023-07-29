@@ -9,6 +9,7 @@ repository = "https://github.com/piropaolo/jmdict-rs"
 readme = "README.md"
 keywords = ["japanese", "dictionary", "jmdict"]
 categories = ["database"]
+exclude = ["/.github"]
 edition = "2021"
 
 [workspace]
