@@ -1,3 +1,23 @@
+//! [jmdict-rs][jmdict-rs] dependency responsible for retrieving dictionary data.
+//!
+//! # License
+//!
+//! ## JMdict
+//!
+//! The origin of **JMdict** in the form of a JSON file is the repository [jmdict-simplified][jmdict-simplified].
+//! In view of this, the said file is subject to the same license as its original source, namely **JMdict.xml**,
+//! which is the intellectual property of the Electronic Dictionary Research and Development Group.
+//! See [EDRDG License][EDRDG-license]
+//!
+//! ## Other files
+//!
+//! Source code and the rest of the files in this project are licensed under [Apache License, Version 2.0][Apache-2.0].
+//!
+//! [jmdict-simplified]: https://github.com/scriptin/jmdict-simplified
+//! [EDRDG-license]: http://www.edrdg.org/edrdg/licence.html
+//! [Apache-2.0]: http://www.apache.org/licenses/LICENSE-2.0
+//! [jmdict-rs]: https://docs.rs/jmdict-rs
+
 use std::io::{Cursor, Read};
 
 use flate2::read::GzDecoder;
