@@ -1,4 +1,4 @@
-use crate::domain::{Entry, JMdict};
+pub use crate::domain::{Entry, Gender, Gloss, GlossType, JMdict, Kana, Kanji, LanguageSource, Sense};
 
 pub mod domain;
 
