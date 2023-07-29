@@ -1,25 +1,19 @@
 [package]
-name = "jmdict-rs"
+name = "jmdict-load"
 version = "0.1.0"
 authors = ["Paweł Kamiński <kaminski_pawel@icloud.com"]
 license = "Apache-2.0"
-description = "Simple interface for interacting with JMdict Japanese dictionary"
-documentation = "https://docs.rs/jmdict-rs"
+description = "jmdict-rs dependency responsible for retrieving dictionary data"
+documentation = "https://docs.rs/jmdict-load"
 repository = "https://github.com/piropaolo/jmdict-rs"
 readme = "README.md"
 keywords = ["japanese", "dictionary", "jmdict"]
 categories = ["database"]
-exclude = ["/.github"]
 edition = "2021"
-
-[workspace]
-members = [
-    "jmdict-load"
-]
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-
-[build-dependencies]
-jmdict-load = { path = "jmdict-load", version = "0.1.0" }
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+flate2 = "1.0.26"
+tar = "0.4.38"
