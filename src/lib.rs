@@ -12,7 +12,7 @@
 //!
 //! ```toml
 //! [dependencies]
-//! jmdict-rs = "0.1.1"
+//! jmdict-rs = "0.1.2"
 //! ```
 //!
 //! # Usage
