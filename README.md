@@ -1,5 +1,9 @@
 # jmdict-rs
 
+[![Crates.io](https://img.shields.io/crates/v/jmdict-rs.svg)](https://crates.io/crates/jmdict-rs)
+[![Docs](https://docs.rs/jmdict-rs/badge.svg)](https://docs.rs/jmdict-rs)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/piropaolo/jmdict-rs/blob/master/LICENSE)
+
 Unleash the kawaii power! **jmdict-rs** is a simple and lightweight Rust library
 that provides an interface for accessing the **JMdict** Japanese language dictionary.
 Instead of using the original XML files, this library utilizes preprocessed JSON files from the
@@ -14,7 +18,7 @@ Add the following to your `Cargo.toml` file
 
 ```toml
 [dependencies]
-jmdict-rs = "0.1.1"
+jmdict-rs = "0.1.2"
 ```
 
 ## Usage
