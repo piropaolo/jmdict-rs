@@ -1,6 +1,6 @@
 [package]
 name = "jmdict-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Paweł Kamiński <kaminski_pawel@icloud.com"]
 license = "Apache-2.0"
 description = "Simple interface for interacting with JMdict Japanese dictionary"
@@ -23,3 +23,6 @@ serde_json = "1.0"
 
 [build-dependencies]
 jmdict-load = { path = "jmdict-load", version = "0.1.0" }
+
+[features]
+no-data = []
